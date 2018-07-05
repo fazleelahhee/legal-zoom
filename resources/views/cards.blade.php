@@ -145,18 +145,18 @@
 
                         console.log(self.attr('name'));
                         if(self.attr('name') === 'high') {
-                            if(lastCard.value === currentCard.value) {
+                            if(parseInt(lastCard.value) === parseInt(currentCard.value)) {
                                 // do nothing its tie.
-                            } else if(lastCard.value > currentCard.value) {
+                            } else if(parseInt(lastCard.value) > parseInt(currentCard.value)) {
                                 _continue = false;
                             } else {
                                 score += 1;
                             }
 
                         } else {
-                            if(lastCard.value === currentCard.value) {
+                            if(parseInt(lastCard.value) === parseInt(currentCard.value)) {
                                 // do nothing its tie.
-                            } else if(lastCard.value < currentCard.value) {
+                            } else if(parseInt(lastCard.value) < parseInt(currentCard.value)) {
                                 _continue = false;
                             } else {
                                 score += 1;
