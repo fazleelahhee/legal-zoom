@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="/css/app.css" rel="stylesheet" type="text/css">
-        <link href="/css/faces/cards.css" rel="stylesheet" type="text/css">
+        <link href="/css/cards/cards.css" rel="stylesheet" type="text/css">
         <!-- Styles -->
         <style>
             html, body {
@@ -179,7 +179,7 @@
                             var html = '<div class="card rank-'+value+' '+suit+'"> ' +
                                     '<span class="rank">'+value+'</span> ' +
                                     '<span class="suit">'+suit+'</span> ' +
-                                    '</div> <p>>Your score:'+score+' </p>';
+                                    '</div> <br /> <p> > Your score:'+score+' </p>';
                             $('.show-result').html(html);
                         }
 

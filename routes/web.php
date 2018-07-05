@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/card-game', 'CardController@index');
+Route::get('/', 'CardController@index');
 Route::get('/get-card', 'CardController@getCard');
