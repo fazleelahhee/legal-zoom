@@ -93,9 +93,9 @@
             $.ajax({
                 url: '/get-card',
                 success: function (response) {
-                    var html = '<div class="card rank-'+response.value+' '+response.suit+'"> ' +
+                    var html = '<div class="card rank-'+response.value.toLowerCase() +' '+response.suit+'"> ' +
                             '<span class="rank">'+response.value+'</span> ' +
-                            '<span class="suit">'+response.suit+'</span> ' +
+                            '<span class="suit">&'+response.suit+';</span> ' +
                             '</div>';
 
 
@@ -165,9 +165,9 @@
 
                         if(_continue) {
 
-                            var html = '<div class="card rank-'+value+' '+suit+'"> ' +
+                            var html = '<div class="card rank-'+value.toLowerCase() +' '+suit+'"> ' +
                                     '<span class="rank">'+value+'</span> ' +
-                                    '<span class="suit">'+suit+'</span> ' +
+                                    '<span class="suit">&'+suit+';</span> ' +
                                     '</div>';
                             $('.show-result').html(html);
                         } else {
@@ -176,7 +176,7 @@
 
 
 
-                            var html = '<div class="card rank-'+value+' '+suit+'"> ' +
+                            var html = '<div class="card rank-'+value.toLowerCase() +' '+suit+'"> ' +
                                     '<span class="rank">'+value+'</span> ' +
                                     '<span class="suit">'+suit+'</span> ' +
                                     '</div> <br /> <p> > Your score:'+score+' </p>';
