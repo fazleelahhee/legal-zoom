@@ -178,7 +178,7 @@
 
                             var html = '<div class="card rank-'+value.toLowerCase() +' '+suit+'"> ' +
                                     '<span class="rank">'+value+'</span> ' +
-                                    '<span class="suit">'+suit+'</span> ' +
+                                    '<span class="suit">&'+suit+';</span> ' +
                                     '</div> <br /> <p> > Your score:'+score+' </p>';
                             $('.show-result').html(html);
                         }
